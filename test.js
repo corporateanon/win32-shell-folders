@@ -1,7 +1,14 @@
-const { getAutostartApps } = require('./index');
+const { getShellFolders, getUserShellFolders } = require('./index');
 
-getAutostartApps().then(items => {
-    items.forEach(it => {
-        console.log(it.key + ' = ' + it.value);
+getShellFolders()
+    .then(items => {
+        items.forEach(it => {
+            console.log(it.key + ' = ' + it.value);
+        });
+        return getUserShellFolders();
+    })
+    .then(items => {
+        items.forEach(it => {
+            console.log(it.key + ' = ' + it.value);
+        });
     });
-});
