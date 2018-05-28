@@ -1,5 +1,6 @@
 const Winreg = require('winreg');
 const normalize = require('./normalize');
+const processEnvVars = require('./processEnvVars');
 
 const getUserShellFolders = () => {
     const reg = new Winreg({
@@ -13,7 +14,7 @@ const getUserShellFolders = () => {
                 fail(err);
                 return;
             }
-            ok(normalize(items));
+            ok(processEnvVars(normalize(items)));
         });
     });
 };
