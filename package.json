@@ -1,14 +1,23 @@
 {
-  "name": "win32-shell-folders",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "winreg": "^1.2.4"
-  }
+    "name": "win-shell-folders",
+    "version": "0.0.1",
+    "description": "Get User Shell Folders in Windows",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test"
+    },
+    "author": "corporate anon <corporateanon@gmail.com>",
+    "license": "WTFPL",
+    "dependencies": {
+        "winreg": "^1.2.4"
+    },
+    "keywords": [
+        "windows",
+        "khown-folders",
+        "shellfolders",
+        "registry",
+        "downloads",
+        "desktop",
+        "os"
+    ]
 }
