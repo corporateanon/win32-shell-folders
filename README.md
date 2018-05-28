@@ -1,5 +1,5 @@
-![https://ci.user.com/api/projects/status/github/corporateanon/win32-shell-folders
-](https://ci.user.com/api/projects/status/github/corporateanon/win32-shell-folders)
+![https://ci.appveyor.com/api/projects/status/github/corporateanon/win32-shell-folders
+](https://ci.appveyor.com/api/projects/status/github/corporateanon/win32-shell-folders)
 
 [![NPM](https://nodei.co/npm/win-shell-folders.png)](https://npmjs.org/package/win-shell-folders)
 

@@ -1,4 +1,4 @@
-const { getShellFolders } = require('./index');
+const { getUserShellFolders } = require('./index');
 const assert = require('assert');
 const processEnvVars = require('./processEnvVars');
 
