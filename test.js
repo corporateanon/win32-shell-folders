@@ -15,4 +15,8 @@ getUserShellFolders().then(folders => {
         folders.FOLDERID_Desktop,
         process.env.USERPROFILE + '\\Desktop'
     );
+    assert.equal(
+        folders.FOLDERID_Download,
+        process.env.USERPROFILE + '\\Downloads'
+    );
 });
