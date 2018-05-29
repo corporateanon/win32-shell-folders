@@ -8,15 +8,20 @@ assert.deepStrictEqual(processEnvVars({ a: '%FOO%becue %FOO%' }), {
 });
 
 console.time('getUserShellFolders');
-getUserShellFolders().then(folders => {
-    console.timeEnd('getUserShellFolders');
-    console.log(folders);
-    assert.equal(
-        folders.FOLDERID_Desktop,
-        process.env.USERPROFILE + '\\Desktop'
-    );
-    assert.equal(
-        folders.FOLDERID_Download,
-        process.env.USERPROFILE + '\\Downloads'
-    );
-});
+getUserShellFolders()
+    .then(folders => {
+        console.timeEnd('getUserShellFolders');
+        console.log(folders);
+        assert.equal(
+            folders.FOLDERID_Desktop,
+            process.env.USERPROFILE + '\\Desktop'
+        );
+        assert.equal(
+            folders.FOLDERID_Download,
+            process.env.USERPROFILE + '\\Downloads'
+        );
+    })
+    .catch(err => {
+        console.log(err.stack);
+        process.exit(1);
+    });
